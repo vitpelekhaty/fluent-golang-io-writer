@@ -136,5 +136,5 @@ func (w *fluentWriter) send(tag string, msg map[string]interface{}, length int) 
 		fmt.Printf("Failed to send: %v\n", msg)
 		return length, nil
 	}
-	return 0, err
+	return length, err
 }
